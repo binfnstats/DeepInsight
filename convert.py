@@ -49,7 +49,7 @@ def convert(file, out):
     it.fit(X, plot=True) # Actual DeepInsight image transformation
     print("Training completed")
     
-    # Transform data to image matricies
+    # Transform data to image matricies (takes significant amount of time). Could be cached.
     X_image = it.transform(X)
 
     assert(Y.shape[0] == X_image.shape[0])
