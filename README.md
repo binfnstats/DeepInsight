@@ -11,7 +11,7 @@ DeepInsight. This is not guaranteed to give the same results as the published
 MatLab code and should be considered experimental.
 
 ## Installation
-    python -m pip -q install git+git://github.com/alok-ai-lab/DeepInsight.git#egg=DeepInsight
+    python3 -m pip -q install git+git://github.com/alok-ai-lab/DeepInsight.git#egg=DeepInsight
     
 [1]: https://doi.org/10.1038/s41598-019-47765-6
 
@@ -92,7 +92,7 @@ it.fit(X_train_norm, plot=True)
 
 
 
-    <pyDeepInsight.image_transformer.ImageTransformer at 0x7f204ebd52e0>
+    <pyDeepInsight.image_transformer.ImageTransformer at 0x7f7549a01220>
 
 
 
@@ -165,7 +165,7 @@ Fit and transform can be done in a single step.
 X_train_img = it.fit_transform(X_train_norm)
 ```
 
-The following are showing plots for the image matrices first four samples 
+Plotting the image matrices first four samples 
 of the training set. 
 
 
@@ -203,4 +203,4 @@ plt.tight_layout()
     
 
 
-The images matrices can then be used as impute for the CNN model.
+The image matrices can then be used as input for the CNN model.
