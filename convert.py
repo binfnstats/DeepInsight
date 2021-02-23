@@ -59,7 +59,7 @@ def convert(file, out):
         for i in range(X_image.shape[0]):
             name = str(i) + ".png"
             path = out + os.sep + name
-            w.write(Y[i] + "\t" + path + "\n")
+            w.write(str(Y[i]) + "\t" + path + "\n")
             matplotlib.image.imsave(path, X_image[i])
 
 if __name__ == "__main__":
