@@ -41,7 +41,7 @@ def convert(file, out):
     assert(s1 == X.shape)
     
     # Pixel dimension
-    dim = 50
+    dim = 120
         
     it = ImageTransformer(feature_extractor='tsne', pixels=dim, random_state=1701, n_jobs=-1)
     
